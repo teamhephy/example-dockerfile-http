@@ -12,7 +12,7 @@ RUN ln -sf /dev/stderr /var/log/nginx/error.log
 # https://bugs.alpinelinux.org/issues/6380
 RUN mkdir -p /run/nginx
 
-# echo some unicode as a regression test for https://github.com/deis/dockerbuilder/issues/49
+# echo some unicode as a regression test for https://github.com/deisthree/dockerbuilder/issues/49
 RUN echo Кубернетис в каждый датацентр!
 
 ENV POWERED_BY Deis
