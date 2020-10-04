@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.12
 
 RUN apk add -U \
 	bash \
@@ -15,7 +15,7 @@ RUN mkdir -p /run/nginx
 # echo some unicode as a regression test for https://github.com/deisthree/dockerbuilder/issues/49
 RUN echo Кубернетис в каждый датацентр!
 
-ENV POWERED_BY Deis
+ENV POWERED_BY Hephy
 
 COPY rootfs /
 
